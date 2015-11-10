@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PriorityQueue", "Advanced-Data-Structures\01.PriorityQueue.csproj", "{8B3B41A8-CDAE-4620-A87E-024A1684AB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.FindInRange", "FindInRange\02.FindInRange.csproj", "{D2D558F1-83A7-4A4E-95D5-18EA4979EC55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.FindWords", "FindWords\03.FindWords.csproj", "{A392F75F-A76A-46DC-A3BE-4AAF4BE179CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B3B41A8-CDAE-4620-A87E-024A1684AB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3B41A8-CDAE-4620-A87E-024A1684AB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3B41A8-CDAE-4620-A87E-024A1684AB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3B41A8-CDAE-4620-A87E-024A1684AB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D558F1-83A7-4A4E-95D5-18EA4979EC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D558F1-83A7-4A4E-95D5-18EA4979EC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D558F1-83A7-4A4E-95D5-18EA4979EC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D558F1-83A7-4A4E-95D5-18EA4979EC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A392F75F-A76A-46DC-A3BE-4AAF4BE179CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A392F75F-A76A-46DC-A3BE-4AAF4BE179CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A392F75F-A76A-46DC-A3BE-4AAF4BE179CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A392F75F-A76A-46DC-A3BE-4AAF4BE179CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

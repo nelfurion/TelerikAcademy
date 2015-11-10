@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Dictionaries-Hash-Tables-and-Sets", "Dictionaries-Hash-Tables-and-Sets\01.Dictionaries-Hash-Tables-and-Sets.csproj", "{C16C997B-CCE5-4A52-919B-7B86B90DF7DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ExtractOddOccurences", "ExtractOddOccurences\02.ExtractOddOccurences.csproj", "{7EE02629-DD2A-4A56-B27B-410727B13749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Count Words", "Count Words\03.Count Words.csproj", "{866A249C-1A66-4E1B-9001-9332E5BE5716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implement HashTable", "Implement HashTable\Implement HashTable.csproj", "{D5A0BF41-8429-4EEA-A059-2AA0CF9DCDCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C16C997B-CCE5-4A52-919B-7B86B90DF7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16C997B-CCE5-4A52-919B-7B86B90DF7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16C997B-CCE5-4A52-919B-7B86B90DF7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16C997B-CCE5-4A52-919B-7B86B90DF7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE02629-DD2A-4A56-B27B-410727B13749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE02629-DD2A-4A56-B27B-410727B13749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE02629-DD2A-4A56-B27B-410727B13749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE02629-DD2A-4A56-B27B-410727B13749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866A249C-1A66-4E1B-9001-9332E5BE5716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866A249C-1A66-4E1B-9001-9332E5BE5716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866A249C-1A66-4E1B-9001-9332E5BE5716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866A249C-1A66-4E1B-9001-9332E5BE5716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A0BF41-8429-4EEA-A059-2AA0CF9DCDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A0BF41-8429-4EEA-A059-2AA0CF9DCDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A0BF41-8429-4EEA-A059-2AA0CF9DCDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A0BF41-8429-4EEA-A059-2AA0CF9DCDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
