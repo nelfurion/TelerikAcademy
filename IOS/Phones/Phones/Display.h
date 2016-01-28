@@ -12,8 +12,19 @@
 @interface Display : NSObject
     @property(nonatomic) double size;
     @property(nonatomic) int colorsCount;
--(id) initWithSize:(double) size
+
+- (double) size;
+- (int) colorsCount;
+
+- (id) initWithSize:(double) size
        colorsCount: (int) colorsCount;
+
+- (id) init;
+
++ (id) display;
+
++ (id) displayWithSize: (double) size
+           colorsCount: (int) colorsCount;
 @end
 
 #endif /* Display_h */

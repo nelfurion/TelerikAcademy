@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Phone.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Phone* detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneModel;
+@property (weak, nonatomic) IBOutlet UILabel *phonePrice;
+@property (weak, nonatomic) IBOutlet UILabel *phoneOwner;
+@property (weak, nonatomic) IBOutlet UILabel *phoneManufacturer;
 
 @end
 

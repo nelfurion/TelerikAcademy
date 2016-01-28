@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F1984471C5981C70068312C /* Battery_Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Battery_Type.h; sourceTree = "<group>"; };
 		7F4E27591C579D4900C6C798 /* Phones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4E275D1C579D4900C6C798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F4E275F1C579D4900C6C798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 				7F4E27951C57A31400C6C798 /* Display.h */,
 				7F4E27981C57D37600C6C798 /* Phone.m */,
 				7F4E279C1C57D86000C6C798 /* Display.m */,
+				7F1984471C5981C70068312C /* Battery_Type.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -530,6 +532,7 @@
 				7F4E278B1C579D4900C6C798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F4E278C1C579D4900C6C798 /* Build configuration list for PBXNativeTarget "PhonesTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +541,7 @@
 				7F4E278E1C579D4900C6C798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F4E278F1C579D4900C6C798 /* Build configuration list for PBXNativeTarget "PhonesUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +550,7 @@
 				7F4E27911C579D4900C6C798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

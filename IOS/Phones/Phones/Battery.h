@@ -8,12 +8,37 @@
 
 #ifndef Battery_h
 #define Battery_h
+
+#import "Battery_Type.h"
+
 @interface Battery : NSObject
-    @property NSString* model;
-    @property double hoursTalk;
-    @property  double hoursIdle;
-    -(id)initWithHoursTalk: (double) hoursTalk
-                 hoursIdle: (double) hoursIdle;
+    @property (nonatomic) NSString* model;
+    @property (nonatomic) double hoursTalk;
+    @property (nonatomic) double hoursIdle;
+    @property (nonatomic) int type;
+
+-(NSString*) model;
+-(double) hoursTalk;
+-(double) hoursIdle;
+-(int) type;
+
+- (id) init;
+
+- (id) initWithHoursTalk: (double) hoursTalk
+               hoursIdle: (double) hoursIdle;
+
+- (id) initWithType: (Battery_Types) type
+          hoursTalk: (double) hoursTalk
+          hoursIdle: (double) hoursIdle;
+
++ (id) battery;
+
++ (id) batteryWithHoursTalk: (double) hoursTalk
+               hoursIdle: (double) hoursIdle;
+
++ (id) batteryWithType: (Battery_Types) type
+          hoursTalk: (double) hoursTalk
+          hoursIdle: (double) hoursIdle;
 @end
 
 #endif /* Battery_h */

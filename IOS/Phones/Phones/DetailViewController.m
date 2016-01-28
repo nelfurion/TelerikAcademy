@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "Phone.h"
 
 @interface DetailViewController ()
 
@@ -28,7 +29,11 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.phoneModel.text = self.detailItem.model;
+        self.phoneOwner.text = self.detailItem.owner;
+        NSString *priceAsText = [NSString stringWithFormat:@"%f", self.detailItem.price];
+        self.phonePrice.text = priceAsText;
+        self.phoneManufacturer.text = self.detailItem.manufacturer;
     }
 }
 
