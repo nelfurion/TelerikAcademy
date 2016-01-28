@@ -10,7 +10,14 @@
 #import "Phone.h"
 #import "Battery_Type.h"
 
+
 @implementation Phone
+
+@synthesize model = _model;
+@synthesize manufacturer = _manufacturer;
+@synthesize owner = _owner;
+@synthesize price = _price;
+
 -(NSString *)description {
     NSString *priceAsText = [NSString stringWithFormat:@"%f", self.price];
     
@@ -31,7 +38,7 @@
 }
 
 - (id) initWithModel:(NSString *)model manufacturer:(NSString *)manufacturer {
-    if (self = [Phone init]) {
+    if (self = [super init]) {
         self.manufacturer = manufacturer;
         self.model = model;
     }
@@ -46,8 +53,8 @@
                     battery:(Battery *)battery
                     display:(Display *)display
     {
-    if(self = [Phone init]) {
-        self. manufacturer = manufacturer;
+    if (self = [super init]) {
+        self.manufacturer = manufacturer;
         self.model = model;
         self.price = price;
         self.owner = owner;
@@ -59,35 +66,35 @@
 }
 
 - (NSString *) manufacturer {
-    if (!self.manufacturer) {
-        self.manufacturer = @"";
+    if (!_manufacturer) {
+        _manufacturer = @"";
     }
     
-    return self.manufacturer;
+    return _manufacturer;
 }
 
 - (NSString *) model {
-    if (!self.model) {
-        self.model = @"";
+    if (!_model) {
+        _model = @"";
     }
     
-    return self.model;
+    return _model;
 }
 
 - (NSString *) owner {
-    if (!self.owner) {
-        self.owner = @"";
+    if (!_owner) {
+        _owner = @"";
     }
     
-    return self.owner;
+    return _owner;
 }
 
 - (double) price {
-    if (!self.price) {
-        self.price = 0;
+    if (!_price) {
+        _price = 0;
     }
     
-    return self.price;
+    return _price;
 }
 
 - (Battery *) battery {

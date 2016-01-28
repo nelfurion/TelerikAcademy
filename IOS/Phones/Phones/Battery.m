@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Battery.h"
-#import "Battery_Type.h"
 
 @implementation Battery
 
@@ -27,7 +26,7 @@
 
 - (id) initWithHoursTalk: (double) hoursTalk
                hoursIdle: (double) hoursIdle {
-    if (self = [Battery init]) {
+    if (self = [super init]) {
         self.hoursTalk = hoursTalk;
         self.hoursIdle = hoursIdle;
     }
@@ -39,7 +38,7 @@
 - (id) initWithType: (Battery_Types) type
           hoursTalk: (double) hoursTalk
           hoursIdle: (double) hoursIdle {
-    if ((self = [Battery init])) {
+    if ((self = [super init])) {
         self.type = type;
         self.hoursTalk = hoursTalk;
         self.hoursIdle = hoursIdle;

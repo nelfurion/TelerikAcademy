@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		7F1984471C5981C70068312C /* Battery_Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Battery_Type.h; sourceTree = "<group>"; };
-		7F4E27591C579D4900C6C798 /* Phones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4E27591C579D4900C6C798 /* Phones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Phones.app; path = "/Users/johndoe/Desktop/telerik/TelerikAcademy/IOS/Phones/build/Debug-iphoneos/Phones.app"; sourceTree = "<absolute>"; };
 		7F4E275D1C579D4900C6C798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F4E275F1C579D4900C6C798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7F4E27601C579D4900C6C798 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,10 +52,10 @@
 		7F4E276B1C579D4900C6C798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F4E276E1C579D4900C6C798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4E27701C579D4900C6C798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F4E27751C579D4900C6C798 /* PhonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4E27751C579D4900C6C798 /* PhonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PhonesTests.xctest; path = "/Users/johndoe/Desktop/telerik/TelerikAcademy/IOS/Phones/build/Debug-iphoneos/PhonesTests.xctest"; sourceTree = "<absolute>"; };
 		7F4E27791C579D4900C6C798 /* PhonesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhonesTests.m; sourceTree = "<group>"; };
 		7F4E277B1C579D4900C6C798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F4E27801C579D4900C6C798 /* PhonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4E27801C579D4900C6C798 /* PhonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PhonesUITests.xctest; path = "/Users/johndoe/Desktop/telerik/TelerikAcademy/IOS/Phones/build/Debug-iphoneos/PhonesUITests.xctest"; sourceTree = "<absolute>"; };
 		7F4E27841C579D4900C6C798 /* PhonesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhonesUITests.m; sourceTree = "<group>"; };
 		7F4E27861C579D4900C6C798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4E27931C579DF000C6C798 /* Phone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Phone.h; sourceTree = "<group>"; };
@@ -97,18 +97,7 @@
 				7F4E275B1C579D4900C6C798 /* Phones */,
 				7F4E27781C579D4900C6C798 /* PhonesTests */,
 				7F4E27831C579D4900C6C798 /* PhonesUITests */,
-				7F4E275A1C579D4900C6C798 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		7F4E275A1C579D4900C6C798 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7F4E27591C579D4900C6C798 /* Phones.app */,
-				7F4E27751C579D4900C6C798 /* PhonesTests.xctest */,
-				7F4E27801C579D4900C6C798 /* PhonesUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7F4E275B1C579D4900C6C798 /* Phones */ = {
@@ -257,7 +246,7 @@
 				Base,
 			);
 			mainGroup = 7F4E27501C579D4800C6C798;
-			productRefGroup = 7F4E275A1C579D4900C6C798 /* Products */;
+			productRefGroup = 7F4E27501C579D4800C6C798;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

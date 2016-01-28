@@ -30,7 +30,7 @@
 }
 
 - (id) init {
-    return [[Display alloc] init];
+    return [super init];
 }
 
 - (double) size {

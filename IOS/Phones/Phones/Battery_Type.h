@@ -13,6 +13,6 @@ typedef NS_ENUM(NSInteger, Battery_Types) {
     LiIon,
     NiMH,
     NiCd
-} Battery_Type;
+};
 
 #endif /* Battery_Type_h */

@@ -11,6 +11,7 @@
 #import "Phone.h"
 #import "Battery.h"
 #import "Display.h"
+#import "Battery_Type.h"
 
 @interface MasterViewController ()
 
@@ -25,7 +26,7 @@
     }
     
     Display *simpleDisplay = [[Display alloc] initWithSize:22 colorsCount:16000];
-    Battery *simpleBattery = [[Battery alloc] initWithHoursTalk:16 hoursIdle:32];
+    Battery *simpleBattery = [Battery batteryWithType:LiIon hoursTalk:20 hoursIdle:40];
     Phone *newPhone = [[Phone alloc] initWithManufacturer:@"Apple" model:@"IPhone 6s" price:3000 owner:@"Bill Gates" battery:simpleBattery display:simpleDisplay];
     [self.phones insertObject:newPhone atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
