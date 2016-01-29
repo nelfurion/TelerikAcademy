@@ -1,31 +1,21 @@
 //
-//  MasterViewController.m
+//  FrakyTableViewContronner.m
 //  Phones
 //
-//  Created by John Doe on 1/26/16.
+//  Created by John Doe on 1/29/16.
 //  Copyright © 2016 John Doe. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
-#import "Phone.h"
-#import "Battery.h"
+#import <Foundation/Foundation.h>
+#import "FrakyTableViewController.h"
 #import "Display.h"
-#import "Battery_Type.h"
 #import "AppDelegate.h"
-#import "AddPhoneViewController.h"
 
-@interface MasterViewController ()
-
-@property NSMutableArray *objects;
-@end
-
-@implementation MasterViewController
+@implementation FrakyTableViewController: UITableViewController
 
 - (void)insertNewObject:(id)sender {
     if (!self.phones) {
-        AppDelegate *delegate = [UIApplication sharedApplication].delegate;
-        self.phones = [delegate.data phones];
+        self.phones = [[NSMutableArray alloc] init];
     }
     
     Display *simpleDisplay = [[Display alloc] initWithSize:22 colorsCount:16000];
@@ -39,11 +29,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     
     self.title = @"Best phone app";
+    
+    /*AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    self.phones = [delegate.data phones];
+    [self.tableView reloadData];*/
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -55,6 +49,17 @@
     [self.tableView reloadData];
 }
 
+- (id) init {
+    self = [super init];
+    if (self) {
+        self.table = [UITableView init];
+        self.button = [UIButton init];
+        self.label = [UILabel init];
+    }
+    
+    return self;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -63,9 +68,9 @@
 {
     //if segue is not created on the button
     /*if ([sender isKindOfClass:[UIButton class]]) {
-        ...
-        [self performSegueWithIdentifier:@"AddGSMSegue" sender:self];
-    }*/
+     ...
+     [self performSegueWithIdentifier:@"AddGSMSegue" sender:self];
+     }*/
     if ([sender isKindOfClass: [UITableViewCell class]]) {
         DetailViewController *detailController = segue.destinationViewController;
         Phone *selectedPhone = [self.phones objectAtIndex:self.tableView.indexPathForSelectedRow.row];
@@ -73,14 +78,6 @@
     }
     
     return;
-}
-
--(void) showAdd {
-    NSString *storyBoardId = @"addPhoneScene";
-    
-    AddPhoneViewController *addPhoneVC =
-    [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
-    [self.navigationController pushViewController:addPhoneVC animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -106,9 +103,15 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.phones removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        AppDelegate* delegate = [UIApplication sharedApplication].delegate;
+        [delegate.data deletePhone:[self.phones objectAtIndex:indexPath.row]];
+        self.phones = [delegate.data phones];
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
+}
+
+- (id) initWithCoder: (NSCoder *) coder {
+    return self = [super initWithCoder: coder];
 }
 
 @end

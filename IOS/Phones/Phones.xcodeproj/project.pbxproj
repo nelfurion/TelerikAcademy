@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F03DDFF1C5AC9920039CAD0 /* FrakyTableViewContronner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03DDFE1C5AC9920039CAD0 /* FrakyTableViewContronner.m */; };
+		7F03DE021C5ADB6C0039CAD0 /* AddPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03DE011C5ADB6C0039CAD0 /* AddPhoneViewController.m */; };
+		7F03DE061C5ADDB30039CAD0 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03DE051C5ADDB30039CAD0 /* LocalData.m */; };
 		7F4E275E1C579D4900C6C798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E275D1C579D4900C6C798 /* main.m */; };
 		7F4E27611C579D4900C6C798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E27601C579D4900C6C798 /* AppDelegate.m */; };
 		7F4E27641C579D4900C6C798 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E27631C579D4900C6C798 /* MasterViewController.m */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F03DDFD1C5AC9220039CAD0 /* FrakyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrakyTableViewController.h; sourceTree = "<group>"; };
+		7F03DDFE1C5AC9920039CAD0 /* FrakyTableViewContronner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrakyTableViewContronner.m; sourceTree = "<group>"; };
+		7F03DE001C5ADB380039CAD0 /* AddPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPhoneViewController.h; sourceTree = "<group>"; };
+		7F03DE011C5ADB6C0039CAD0 /* AddPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhoneViewController.m; sourceTree = "<group>"; };
+		7F03DE041C5ADD800039CAD0 /* LocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
+		7F03DE051C5ADDB30039CAD0 /* LocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalData.m; sourceTree = "<group>"; };
 		7F1984471C5981C70068312C /* Battery_Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Battery_Type.h; sourceTree = "<group>"; };
 		7F4E27591C579D4900C6C798 /* Phones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Phones.app; path = "/Users/johndoe/Desktop/telerik/TelerikAcademy/IOS/Phones/build/Debug-iphoneos/Phones.app"; sourceTree = "<absolute>"; };
 		7F4E275D1C579D4900C6C798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F03DE031C5ADD6B0039CAD0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7F4E27921C579D5000C6C798 /* Models */,
+				7F03DE051C5ADDB30039CAD0 /* LocalData.m */,
+				7F03DE041C5ADD800039CAD0 /* LocalData.h */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		7F4E27501C579D4800C6C798 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +122,7 @@
 		7F4E275B1C579D4900C6C798 /* Phones */ = {
 			isa = PBXGroup;
 			children = (
-				7F4E27921C579D5000C6C798 /* Models */,
+				7F03DE031C5ADD6B0039CAD0 /* Data */,
 				7F4E275F1C579D4900C6C798 /* AppDelegate.h */,
 				7F4E27601C579D4900C6C798 /* AppDelegate.m */,
 				7F4E27621C579D4900C6C798 /* MasterViewController.h */,
@@ -115,6 +134,10 @@
 				7F4E276D1C579D4900C6C798 /* LaunchScreen.storyboard */,
 				7F4E27701C579D4900C6C798 /* Info.plist */,
 				7F4E275C1C579D4900C6C798 /* Supporting Files */,
+				7F03DDFD1C5AC9220039CAD0 /* FrakyTableViewController.h */,
+				7F03DDFE1C5AC9920039CAD0 /* FrakyTableViewContronner.m */,
+				7F03DE001C5ADB380039CAD0 /* AddPhoneViewController.h */,
+				7F03DE011C5ADB6C0039CAD0 /* AddPhoneViewController.m */,
 			);
 			path = Phones;
 			sourceTree = "<group>";
@@ -290,10 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4E27611C579D4900C6C798 /* AppDelegate.m in Sources */,
+				7F03DE021C5ADB6C0039CAD0 /* AddPhoneViewController.m in Sources */,
 				7F4E279B1C57D66F00C6C798 /* Battery.m in Sources */,
 				7F4E279D1C57D86000C6C798 /* Display.m in Sources */,
 				7F4E27991C57D37600C6C798 /* Phone.m in Sources */,
+				7F03DE061C5ADDB30039CAD0 /* LocalData.m in Sources */,
 				7F4E27641C579D4900C6C798 /* MasterViewController.m in Sources */,
+				7F03DDFF1C5AC9920039CAD0 /* FrakyTableViewContronner.m in Sources */,
 				7F4E275E1C579D4900C6C798 /* main.m in Sources */,
 				7F4E27671C579D4900C6C798 /* DetailViewController.m in Sources */,
 			);
