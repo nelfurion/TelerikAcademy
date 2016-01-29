@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F03DDFF1C5AC9920039CAD0 /* FrakyTableViewContronner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03DDFE1C5AC9920039CAD0 /* FrakyTableViewContronner.m */; };
 		7F03DE021C5ADB6C0039CAD0 /* AddPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03DE011C5ADB6C0039CAD0 /* AddPhoneViewController.m */; };
 		7F03DE061C5ADDB30039CAD0 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03DE051C5ADDB30039CAD0 /* LocalData.m */; };
 		7F4E275E1C579D4900C6C798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E275D1C579D4900C6C798 /* main.m */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7F03DDFE1C5AC9920039CAD0 /* FrakyTableViewContronner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrakyTableViewContronner.m; sourceTree = "<group>"; };
 		7F03DE001C5ADB380039CAD0 /* AddPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPhoneViewController.h; sourceTree = "<group>"; };
 		7F03DE011C5ADB6C0039CAD0 /* AddPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhoneViewController.m; sourceTree = "<group>"; };
 		7F03DE041C5ADD800039CAD0 /* LocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				7F4E276D1C579D4900C6C798 /* LaunchScreen.storyboard */,
 				7F4E27701C579D4900C6C798 /* Info.plist */,
 				7F4E275C1C579D4900C6C798 /* Supporting Files */,
-				7F03DDFE1C5AC9920039CAD0 /* FrakyTableViewContronner.m */,
 				7F03DE001C5ADB380039CAD0 /* AddPhoneViewController.h */,
 				7F03DE011C5ADB6C0039CAD0 /* AddPhoneViewController.m */,
 			);
@@ -320,7 +317,6 @@
 				7F4E27991C57D37600C6C798 /* Phone.m in Sources */,
 				7F03DE061C5ADDB30039CAD0 /* LocalData.m in Sources */,
 				7F4E27641C579D4900C6C798 /* MasterViewController.m in Sources */,
-				7F03DDFF1C5AC9920039CAD0 /* FrakyTableViewContronner.m in Sources */,
 				7F4E275E1C579D4900C6C798 /* main.m in Sources */,
 				7F4E27671C579D4900C6C798 /* DetailViewController.m in Sources */,
 			);
